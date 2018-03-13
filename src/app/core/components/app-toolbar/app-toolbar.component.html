@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Active tools</span>
+
+    <span>{{ name$ | async }}</span>
+
+    <button mat-raised-button
+            color="primary"
+            type="button"
+            *ngIf="logged$ | async"
+            (click)="onLogout()">Logout</button>
+  </mat-toolbar-row>
+</mat-toolbar>

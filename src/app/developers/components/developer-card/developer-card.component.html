@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar class="header-img"></div>
+    <mat-card-title>Main Technology: {{ developer.technology }}</mat-card-title>
+    <mat-card-subtitle>Current Position: {{ developer.position$ | async }}</mat-card-subtitle>
+    <mat-card-subtitle>Number of Commits: {{ developer.commits$ | async }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="card-content">
+    <img mat-card-image [src]="developer.image" alt="Main developer technology" class="card-img">
+    <p class="card-description">{{ developer.description }}</p>
+  </mat-card-content>
+  <mat-card>
+    <h3>Skills</h3>
+    <im-skills-list [skills]="developer.getSkills()"></im-skills-list>
+  </mat-card>
+</mat-card>

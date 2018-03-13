@@ -1,0 +1,31 @@
+import { NgModule } from '@angular/core';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { ApiConfiguration } from './api-configuration';
+import { environment } from '../../environments/environment';
+import { ApiOfflineService } from '../api-offline.service';
+
+{{#services}}import { {{serviceClass}} } from './services/{{serviceFile}}';
+{{/services}}
+
+/**
+ * Module that provides instances for all API services
+ */
+@NgModule({
+  imports: [
+    HttpClientModule
+  ],
+  exports: [
+    HttpClientModule
+  ],
+  declarations: [],
+  providers: [
+    ApiConfiguration,
+    {
+      provide: ApiService,
+      useClass: environment.offline
+        ? ApiOfflineService
+        : ApiService
+    }
+  ],
+})
+export class ApiModule { }

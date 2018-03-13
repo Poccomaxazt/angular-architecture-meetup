@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-header>
+    <h3>Actions</h3>
+  </mat-card-header>
+
+  <mat-card-content>
+    <button mat-raised-button color="primary" type="button" (click)="onCommit()">Commit</button>
+    <button mat-raised-button color="primary" type="button" [disabled]="!activeUpdate" (click)="onUpdate()">Update position</button>
+  </mat-card-content>
+</mat-card>

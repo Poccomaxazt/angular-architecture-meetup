@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-header>
+    <h3>War Status</h3>
+  </mat-card-header>
+
+  <mat-card-content>
+    <im-lang-commits *ngFor="let lang of langs; trackBy: trackByFn"
+                     [title]="lang.name"
+                     [progress]="calcProgress(lang.commits)">
+    </im-lang-commits>
+  </mat-card-content>
+</mat-card>

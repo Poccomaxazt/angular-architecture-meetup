@@ -1,0 +1,22 @@
+.header-img {
+  background-image: url('../../../../assets/img/dev.png');
+  background-size: cover;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-img {
+  display: inline-block;
+  width: 15%;
+  margin: 0;
+}
+
+.card-description {
+  display: inline-block;
+  width: calc(85% - 14px);
+  margin: 0;
+}

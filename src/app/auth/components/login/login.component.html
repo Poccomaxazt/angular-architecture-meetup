@@ -1,0 +1,35 @@
+<div class="loader" *ngIf="loading$ | async">
+  <mat-progress-spinner mode="indeterminate" diameter="70"></mat-progress-spinner>
+</div>
+
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar class="header-img"></div>
+    <mat-card-title>Welcome guest</mat-card-title>
+    <mat-card-subtitle>Choose your hero...</mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div [formGroup]="form">
+      <div class="row">
+        <mat-form-field>
+          <input matInput placeholder="Your Name" formControlName="name">
+          <mat-hint>Please say your name</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field>
+          <mat-select placeholder="Your Technology Language" formControlName="technology">
+            <mat-option *ngFor="let lang of languages$ | async; trackBy: trackById" [value]="lang.name">
+              {{ lang.name }}
+            </mat-option>
+          </mat-select>
+          <mat-hint>What is your power?</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button (click)="onLogin()">Login</button>
+  </mat-card-actions>
+</mat-card>

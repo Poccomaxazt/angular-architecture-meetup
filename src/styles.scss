@@ -1,0 +1,19 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@import "./styles/configs";
+
+body {
+  width: 100%;
+  max-width: $screen-width;
+  margin: 0 auto;
+  font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.mat-input-container {
+  margin-bottom: 10px;
+}

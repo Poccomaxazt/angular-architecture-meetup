@@ -1,0 +1,34 @@
+@import "../../../../../styles/colors";
+
+:host {
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+}
+
+h2 {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  color: #959595;
+}
+
+.progress {
+  position: relative;
+  background: #ccc;
+  height: 6px;
+}
+
+.progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.JavaScript {
+  background: $main-im-blue;
+}
+
+.CSharp {
+  background: $main-im-green;
+}

@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
+import {ConfirmModalService} from './shared/services/confirm-modal.service';
 
 @Component({
-  selector: 'app-root',
+  selector: 'im-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AppComponent {
-  title = 'app';
+  constructor(private cms: ConfirmModalService) {
+    this.cms.initSubcribtion();
+  }
 }

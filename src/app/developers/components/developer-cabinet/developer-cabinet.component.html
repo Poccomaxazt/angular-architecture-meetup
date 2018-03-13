@@ -1,0 +1,8 @@
+<div *ngIf="developer$ | async as developer">
+  <im-developer-card [developer]="developer">
+  </im-developer-card>
+  <im-developer-actions [activeUpdate]="activeUpdate$ | async"
+                        (commit)="onCommit(developer)"
+                        (update)="onUpdate(developer)">
+  </im-developer-actions>
+</div>

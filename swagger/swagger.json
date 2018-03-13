@@ -1,0 +1,143 @@
+{
+	"basePath": "/api/v1",
+	"consumes": [
+		"application/json"
+	],
+	"definitions": {
+		"LanguageType": {
+			"enum": [
+				"JavaScript",
+				"CSharp"
+			],
+			"type": "string"
+		},
+		"DeveloperPosition": {
+			"enum": [
+				"Trainee",
+				"Junior",
+				"Middle",
+				"Senior",
+				"Expert"
+			],
+			"type": "string"
+		},
+    "LanguageStatistic": {
+      "properties": {
+        "name": {
+          "$ref": "#/definitions/LanguageType"
+        },
+        "commits": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "name",
+        "commits"
+      ],
+      "type": "object"
+    },
+    "User": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "technology": {
+          "$ref": "#/definitions/LanguageType"
+        },
+        "position": {
+          "$ref": "#/definitions/DeveloperPosition"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "technology",
+        "position"
+      ],
+      "type": "object"
+    },
+    "Language": {
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "$ref": "#/definitions/LanguageType"
+        }
+      },
+      "required": [
+        "id",
+        "type"
+      ],
+      "type": "object"
+    }
+	},
+	"info": {
+		"title": "developer-wars",
+		"version": "0.0.1",
+		"license": {
+			"name": "MIT"
+		}
+	},
+	"paths": {
+		"/Languages": {
+			"get": {
+				"operationId": "getLanguages",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Language"
+              }
+            }
+					}
+				},
+				"summary": "Get languages list",
+				"security": [],
+				"parameters": []
+			}
+		},
+    "/Auth": {
+			"post": {
+				"operationId": "login",
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"schema": {
+              "$ref": "#/definitions/User"
+            }
+					}
+				},
+				"summary": "User authentication",
+				"security": [],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "user",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ]
+			}
+		}
+	},
+	"produces": [
+		"application/json"
+	],
+	"swagger": "2.0",
+	"securityDefinitions": {},
+	"host": "localhost:8088"
+}

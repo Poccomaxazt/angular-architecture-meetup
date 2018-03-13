@@ -1,0 +1,6 @@
+<h1 mat-dialog-title>{{ (content$ | async)?.message }}</h1>
+
+<div class="buttons">
+  <button mat-button color="primary" type="button" (click)="onCancel()" cdkFocusInitial>Cancel</button>
+  <button mat-raised-button color="primary" type="button" (click)="onOk()">Ok</button>
+</div>
