@@ -1,19 +1,19 @@
 import 'rxjs/add/operator/do';
-import {Injectable} from '@angular/core';
-import {Action} from '@ngrx/store';
-import {Observable} from 'rxjs/Observable';
+import { Injectable } from '@angular/core';
+import { Action } from '@ngrx/store';
+import { Observable } from 'rxjs/Observable';
 import * as auth from './auth.actions';
-import {Actions, Effect, ofType} from '@ngrx/effects';
-import {Router} from '@angular/router';
+import { Actions, Effect, ofType } from '@ngrx/effects';
+import { Router } from '@angular/router';
 
-import {exhaustMap} from 'rxjs/operators/exhaustMap';
-import {tap} from 'rxjs/operators/tap';
-import {map} from 'rxjs/operators/map';
-import {catchError} from 'rxjs/operators/catchError';
-import {of} from 'rxjs/observable/of';
-import {AuthService} from '../services/auth.service';
-import {User} from '../../api/models/user';
-import {delay} from 'rxjs/operators/delay';
+import { exhaustMap } from 'rxjs/operators/exhaustMap';
+import { tap } from 'rxjs/operators/tap';
+import { map } from 'rxjs/operators/map';
+import { catchError } from 'rxjs/operators/catchError';
+import { of } from 'rxjs/observable/of';
+import { AuthService } from '../services/auth.service';
+import { User } from '../../api/models/user';
+import { delay } from 'rxjs/operators/delay';
 
 @Injectable()
 export class AuthEffects {

@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Confirmation} from '../../../shared/decorators/confirmation.decorator';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+import { Confirmation } from '../../../shared/decorators/confirmation.decorator';
 
 @Component({
   selector: 'im-developer-actions',

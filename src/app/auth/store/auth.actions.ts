@@ -1,6 +1,6 @@
-import {Action} from '@ngrx/store';
-import {type} from '../../shared/utils/store-utils';
-import {User} from '../../api/models/user';
+import { Action } from '@ngrx/store';
+import { type } from '../../shared/utils/store-utils';
+import { User } from '../../api/models/user';
 
 export const ActionTypes = {
   LOGIN: type('[Auth] Login User'),

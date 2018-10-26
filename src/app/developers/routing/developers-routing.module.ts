@@ -1,8 +1,8 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {DeveloperCabinetComponent} from '../components/developer-cabinet/developer-cabinet.component';
-import {DevelopersComponent} from '../components/developers/developers.component';
-import {AuthGuard} from '../../auth/guards/auth.guard';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { DeveloperCabinetComponent } from '../components/developer-cabinet/developer-cabinet.component';
+import { DevelopersComponent } from '../components/developers/developers.component';
+import { AuthGuard } from '../../auth/guards/auth.guard';
 
 export const devRoutes: Routes = [
   {

@@ -1,9 +1,9 @@
-import {ApiService} from './api/services/api.service';
-import {Observable} from 'rxjs/Observable';
-import {Language} from './api/models/language';
-import {LanguageType} from './api/models/language-type';
-import {Observer} from 'rxjs/Observer';
-import {User} from './api/models/user';
+import { ApiService } from './api/services/api.service';
+import { Observable } from 'rxjs/Observable';
+import { Language } from './api/models/language';
+import { LanguageType } from './api/models/language-type';
+import { Observer } from 'rxjs/Observer';
+import { User } from './api/models/user';
 
 export class ApiOfflineService extends ApiService {
   public getLanguages(): Observable<Language[]> {

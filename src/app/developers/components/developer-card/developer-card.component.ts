@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
-import {Developer} from '../../developer-types/developer';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { Developer } from '../../developer-types/developer';
 
 @Component({
   selector: 'im-developer-card',

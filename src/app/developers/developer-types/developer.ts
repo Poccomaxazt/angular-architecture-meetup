@@ -1,11 +1,8 @@
-import {LanguageType} from '../../api/models/language-type';
-import {DeveloperPosition} from '../../api/models/developer-position';
-import {Observable} from 'rxjs/Observable';
-import {BehaviorSubject} from 'rxjs/BehaviorSubject';
-import {select, Store} from '@ngrx/store';
-import * as fromDevs from '../store/reducers';
-import * as devs from '../store/developers.actions';
-import {DevelopersService} from '../services/developers.service';
+import { LanguageType } from '../../api/models/language-type';
+import { DeveloperPosition } from '../../api/models/developer-position';
+import { Observable } from 'rxjs/Observable';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { DevelopersService } from '../services/developers.service';
 
 export abstract class Developer {
   public readonly technology: LanguageType;

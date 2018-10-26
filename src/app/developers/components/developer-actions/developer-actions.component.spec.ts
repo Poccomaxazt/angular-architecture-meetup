@@ -1,6 +1,6 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {DeveloperActionsComponent} from './developer-actions.component';
+import { DeveloperActionsComponent } from './developer-actions.component';
 
 describe('DeveloperActionsComponent', () => {
   let component: DeveloperActionsComponent;

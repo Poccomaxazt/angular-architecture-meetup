@@ -1,11 +1,11 @@
-import {Injectable} from '@angular/core';
-import {LanguageType} from '../../api/models/language-type';
-import {JavaScriptDeveloper} from '../developer-types/java-script-developer';
-import {CSharpDeveloper} from '../developer-types/c-sharp-developer';
-import {DeveloperPosition} from '../../api/models/developer-position';
-import {Developer} from '../developer-types/developer';
-import {DevelopersService} from './developers.service';
-import {JavaDeveloper} from '../developer-types/java-develop';
+import { Injectable } from '@angular/core';
+import { LanguageType } from '../../api/models/language-type';
+import { JavaScriptDeveloper } from '../developer-types/java-script-developer';
+import { CSharpDeveloper } from '../developer-types/c-sharp-developer';
+import { DeveloperPosition } from '../../api/models/developer-position';
+import { Developer } from '../developer-types/developer';
+import { DevelopersService } from './developers.service';
+import { JavaDeveloper } from '../developer-types/java-develop';
 
 @Injectable()
 export class DevelopersFactoryService {

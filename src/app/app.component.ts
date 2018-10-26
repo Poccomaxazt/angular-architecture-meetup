@@ -1,5 +1,5 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {ConfirmModalService} from './shared/services/confirm-modal.service';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ConfirmModalService } from './shared/services/confirm-modal.service';
 
 @Component({
   selector: 'im-root',

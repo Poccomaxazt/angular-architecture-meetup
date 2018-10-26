@@ -1,6 +1,6 @@
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import {LangCommitsComponent} from './lang-commits.component';
+import { LangCommitsComponent } from './lang-commits.component';
 
 describe('LangCommitsComponent', () => {
   let component: LangCommitsComponent;

@@ -1,4 +1,4 @@
-import {LanguagesSocketService} from './languages-socket.service';
+import { LanguagesSocketService } from './languages-socket.service';
 
 export class LanguagesIoSocketService extends LanguagesSocketService {
   constructor() {

@@ -1,6 +1,6 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {SkillComponent} from '../skill-component.model';
-import {DynamicComponent} from '../../../../shared/decorators/dynamic-component.decorator';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { SkillComponent } from '../skill-component.model';
+import { DynamicComponent } from '../../../../shared/decorators/dynamic-component.decorator';
 
 @Component({
   selector: 'im-desktop-skill',

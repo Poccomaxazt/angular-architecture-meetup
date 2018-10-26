@@ -1,5 +1,5 @@
-import {Action} from '@ngrx/store';
-import {type} from '../../shared/utils/store-utils';
+import { Action } from '@ngrx/store';
+import { type } from '../../shared/utils/store-utils';
 
 export const ActionTypes = {
   COMMIT: type('[Devs] Commit'),

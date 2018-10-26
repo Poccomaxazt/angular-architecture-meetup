@@ -1,5 +1,5 @@
-import {Developer} from './developer';
-import {LanguageType} from '../../api/models/language-type';
+import { Developer } from './developer';
+import { LanguageType } from '../../api/models/language-type';
 
 export class CSharpDeveloper extends Developer {
   public readonly technology: LanguageType = LanguageType.CSHARP;

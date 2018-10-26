@@ -1,6 +1,6 @@
-import {Action} from '@ngrx/store';
-import {type} from '../../shared/utils/store-utils';
-import {ConfirmModal} from '../../shared/components/confirm-modal/confirm-modal.model';
+import { Action } from '@ngrx/store';
+import { type } from '../../shared/utils/store-utils';
+import { ConfirmModal } from '../../shared/components/confirm-modal/confirm-modal.model';
 
 export const ActionTypes = {
   SHOW_CONFIRM_MODAL: type('[Layout] Show Confirm Modal'),

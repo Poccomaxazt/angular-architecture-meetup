@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import {DevelopersFactoryService} from './developers-factory.service';
+import { DevelopersFactoryService } from './developers-factory.service';
 import * as fromAuth from '../../auth/store/reducers';
 import * as fromDevs from '../store/reducers';
-import {select, Store} from '@ngrx/store';
-import {Observable} from 'rxjs/Observable';
-import {Developer} from '../developer-types/developer';
-import {map} from 'rxjs/operators/map';
-import {filter} from 'rxjs/operators/filter';
-import {User} from '../../api/models/user';
+import { select, Store } from '@ngrx/store';
+import { Observable } from 'rxjs/Observable';
+import { Developer } from '../developer-types/developer';
+import { map } from 'rxjs/operators/map';
+import { filter } from 'rxjs/operators/filter';
+import { User } from '../../api/models/user';
 import * as devs from '../store/developers.actions';
 
 @Injectable()
