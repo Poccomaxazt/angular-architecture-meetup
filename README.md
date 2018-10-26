@@ -1,6 +1,10 @@
 # ImApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
+This a test project for Infopulse meetup and a presentation of theme "Angular Architecture patterns" 
+
+## YouTube
+
+Stream record from the Infopulse meetup and the [presentation](https://www.youtube.com/watch?v=g5EY1GSro8E&t=13470s).  
 
 ## Development server
 
@@ -13,15 +17,3 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
