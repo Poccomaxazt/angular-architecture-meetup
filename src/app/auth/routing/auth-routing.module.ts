@@ -1,7 +1,7 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {LoginComponent} from '../components/login/login.component';
-import {AuthComponent} from '../components/auth/auth.component';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from '../components/login/login.component';
+import { AuthComponent } from '../components/auth/auth.component';
 
 export const authRoutes: Routes = [
   {

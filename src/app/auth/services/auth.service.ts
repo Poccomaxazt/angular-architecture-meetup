@@ -1,9 +1,9 @@
-import {Injectable} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
-import {User} from '../../api/models/user';
-import {ApiService} from '../../api/services/api.service';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { User } from '../../api/models/user';
+import { ApiService } from '../../api/services/api.service';
 import * as fromAuth from '../store/reducers';
-import {select, Store} from '@ngrx/store';
+import { select, Store } from '@ngrx/store';
 import * as auth from '../store/auth.actions';
 
 @Injectable()

@@ -1,5 +1,5 @@
-import {ShowConfirmModalAction} from '../../core/store/layout.actions';
-import {SharedModule} from '../shared.module';
+import { ShowConfirmModalAction } from '../../core/store/layout.actions';
+import { SharedModule } from '../shared.module';
 
 /**
  * This decorator calls confirm dialog for method with info message like a parameter

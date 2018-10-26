@@ -1,12 +1,12 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
-import {Store} from '@ngrx/store';
-import {State} from '../store/reducers';
-import {MaterialModule} from '../material/material.module';
-import {ConfirmModalContentComponent} from './components/confirm-modal/confirm-modal-content.component';
-import {ConfirmationService} from './services/confirmation.service';
-import {DynamicComponentDirective} from './directives/dynamic-component.directive';
-import {ConfirmModalService} from './services/confirm-modal.service';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Store } from '@ngrx/store';
+import { State } from '../store/reducers';
+import { MaterialModule } from '../material/material.module';
+import { ConfirmModalContentComponent } from './components/confirm-modal/confirm-modal-content.component';
+import { ConfirmationService } from './services/confirmation.service';
+import { DynamicComponentDirective } from './directives/dynamic-component.directive';
+import { ConfirmModalService } from './services/confirm-modal.service';
 
 @NgModule({
   imports: [

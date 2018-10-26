@@ -1,9 +1,8 @@
-import {Injectable} from '@angular/core';
-import {MatDialog, MatDialogRef} from '@angular/material';
+import { Injectable } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material';
 import * as fromRoot from '../../store/reducers';
-import {ConfirmModalContentComponent} from '../components/confirm-modal/confirm-modal-content.component';
-import {Store} from '@ngrx/store';
-import * as layout from '../../core/store/layout.actions';
+import { ConfirmModalContentComponent } from '../components/confirm-modal/confirm-modal-content.component';
+import { Store } from '@ngrx/store';
 
 @Injectable()
 export class ConfirmModalService {

@@ -1,6 +1,6 @@
 import * as layout from './layout.actions';
-import {ShowConfirmModalAction} from './layout.actions';
-import {ConfirmModal} from '../../shared/components/confirm-modal/confirm-modal.model';
+import { ShowConfirmModalAction } from './layout.actions';
+import { ConfirmModal } from '../../shared/components/confirm-modal/confirm-modal.model';
 
 export interface State {
   showConfirmModal: boolean;

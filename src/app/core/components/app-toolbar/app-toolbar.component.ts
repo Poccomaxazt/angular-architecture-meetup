@@ -1,9 +1,9 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
-import {Confirmation} from '../../../shared/decorators/confirmation.decorator';
-import {map} from 'rxjs/operators/map';
-import {User} from '../../../api/models/user';
-import {AuthService} from '../../../auth/services/auth.service';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { Confirmation } from '../../../shared/decorators/confirmation.decorator';
+import { map } from 'rxjs/operators/map';
+import { User } from '../../../api/models/user';
+import { AuthService } from '../../../auth/services/auth.service';
 
 @Component({
   selector: 'im-app-toolbar',

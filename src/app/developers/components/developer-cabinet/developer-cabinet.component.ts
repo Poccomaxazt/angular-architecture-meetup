@@ -1,11 +1,11 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {LanguagesSocketService} from '../../../languages/services/languages-socket.service';
-import {Developer} from '../../developer-types/developer';
-import {DevelopersService} from '../../services/developers.service';
-import {Observable} from 'rxjs/Observable';
-import {map} from 'rxjs/operators/map';
-import {switchMap} from 'rxjs/operators/switchMap';
-import {filter} from 'rxjs/operators/filter';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { LanguagesSocketService } from '../../../languages/services/languages-socket.service';
+import { Developer } from '../../developer-types/developer';
+import { DevelopersService } from '../../services/developers.service';
+import { Observable } from 'rxjs/Observable';
+import { map } from 'rxjs/operators/map';
+import { switchMap } from 'rxjs/operators/switchMap';
+import { filter } from 'rxjs/operators/filter';
 
 @Component({
   selector: 'im-developer-cabinet',

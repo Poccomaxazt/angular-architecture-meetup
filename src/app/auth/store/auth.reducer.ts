@@ -1,5 +1,5 @@
 import * as auth from './auth.actions';
-import {User} from '../../api/models/user';
+import { User } from '../../api/models/user';
 
 export interface State {
   accessToken: string;

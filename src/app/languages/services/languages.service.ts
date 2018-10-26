@@ -1,9 +1,9 @@
-import {Injectable} from '@angular/core';
-import {ApiService} from '../../api/services/api.service';
-import {Observable} from 'rxjs/Observable';
-import {Language} from '../../api/models/language';
-import {shareReplay} from 'rxjs/operators/shareReplay';
-import {tap} from 'rxjs/operators';
+import { Injectable } from '@angular/core';
+import { ApiService } from '../../api/services/api.service';
+import { Observable } from 'rxjs/Observable';
+import { Language } from '../../api/models/language';
+import { shareReplay } from 'rxjs/operators/shareReplay';
+import { tap } from 'rxjs/operators';
 
 const CACHE_SIZE = 1;
 

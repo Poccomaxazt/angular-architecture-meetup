@@ -1,5 +1,5 @@
 import { ComponentFactoryResolver, ComponentRef, Directive, Input, OnChanges, SimpleChanges, ViewContainerRef } from '@angular/core';
-import {getDynamicComponentByType} from '../decorators/dynamic-component.decorator';
+import { getDynamicComponentByType } from '../decorators/dynamic-component.decorator';
 
 @Directive({
   selector: '[imDynamicComponent]'

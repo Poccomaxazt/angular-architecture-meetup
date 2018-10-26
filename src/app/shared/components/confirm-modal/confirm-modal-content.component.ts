@@ -1,8 +1,8 @@
-import {ChangeDetectionStrategy, Component} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
-import {ConfirmModal} from './confirm-modal.model';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { ConfirmModal } from './confirm-modal.model';
 import 'rxjs/add/operator/first';
-import {ConfirmationService} from '../../services/confirmation.service';
+import { ConfirmationService } from '../../services/confirmation.service';
 
 @Component({
   selector: 'im-confirm-modal-content',

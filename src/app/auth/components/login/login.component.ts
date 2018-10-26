@@ -1,11 +1,11 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {FormComponent} from '../../../shared/models/form-component.model';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {LanguageType} from '../../../api/models/language-type';
-import {Language} from '../../../api/models/language';
-import {Observable} from 'rxjs/Observable';
-import {LanguagesService} from '../../../languages/services/languages.service';
-import {AuthService} from '../../services/auth.service';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { FormComponent } from '../../../shared/models/form-component.model';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { LanguageType } from '../../../api/models/language-type';
+import { Language } from '../../../api/models/language';
+import { Observable } from 'rxjs/Observable';
+import { LanguagesService } from '../../../languages/services/languages.service';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'im-login',

@@ -1,8 +1,8 @@
-import {LanguagesSocketService} from './languages-socket.service';
-import {Observable} from 'rxjs/Observable';
-import {LanguageStatistic} from '../../api/models/language-statistic';
-import {BehaviorSubject} from 'rxjs/BehaviorSubject';
-import {LanguageType} from '../../api/models/language-type';
+import { LanguagesSocketService } from './languages-socket.service';
+import { Observable } from 'rxjs/Observable';
+import { LanguageStatistic } from '../../api/models/language-statistic';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { LanguageType } from '../../api/models/language-type';
 
 export class LanguagesOfflineSocketService extends LanguagesSocketService {
   protected statistic: BehaviorSubject<LanguageStatistic[]> = new BehaviorSubject([

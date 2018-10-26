@@ -1,7 +1,7 @@
-import {ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit} from '@angular/core';
-import {LanguagesSocketService} from '../../services/languages-socket.service';
-import {LanguageStatistic} from '../../../api/models/language-statistic';
-import {Subscription} from 'rxjs/Subscription';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import { LanguagesSocketService } from '../../services/languages-socket.service';
+import { LanguageStatistic } from '../../../api/models/language-statistic';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'im-lang-statistics',
