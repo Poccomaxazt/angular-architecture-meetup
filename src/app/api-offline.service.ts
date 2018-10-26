@@ -10,6 +10,10 @@ export class ApiOfflineService extends ApiService {
     return Observable.create((observer: Observer<Language[]>) => {
       observer.next([
         {
+          id: 'java',
+          name: LanguageType.JAVA
+        },
+        {
           id: 'js',
           name: LanguageType.JAVA_SCRIPT
         },

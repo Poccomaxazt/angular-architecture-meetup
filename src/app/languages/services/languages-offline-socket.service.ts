@@ -7,6 +7,10 @@ import {LanguageType} from '../../api/models/language-type';
 export class LanguagesOfflineSocketService extends LanguagesSocketService {
   protected statistic: BehaviorSubject<LanguageStatistic[]> = new BehaviorSubject([
     {
+      name: LanguageType.JAVA,
+      commits: 2
+    },
+    {
       name: LanguageType.JAVA_SCRIPT,
       commits: 3
     },
@@ -24,7 +28,11 @@ export class LanguagesOfflineSocketService extends LanguagesSocketService {
   public connect(): void {
     // simulate activity
     setInterval(() => {
-      const lang = Math.round(Math.random()) ? LanguageType.CSHARP : LanguageType.JAVA_SCRIPT;
+      const lang = Math.round(Math.random())
+        ? Math.round(Math.random())
+          ? LanguageType.CSHARP
+          : LanguageType.JAVA
+        : LanguageType.JAVA_SCRIPT;
       this.emit(lang);
     }, 2000);
   }

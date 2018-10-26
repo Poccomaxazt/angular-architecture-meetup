@@ -6,6 +6,7 @@
 	"definitions": {
 		"LanguageType": {
 			"enum": [
+        "Java",
 				"JavaScript",
 				"CSharp"
 			],
