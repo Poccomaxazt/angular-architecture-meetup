@@ -10,8 +10,4 @@ import { Developer } from '../../developer-types/developer';
 export class DeveloperCardComponent {
   @Input()
   public developer: Developer;
-
-  ngOnInit(){
-    console.log(this.developer);
-  }
 }
