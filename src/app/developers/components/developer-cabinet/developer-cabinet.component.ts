@@ -10,7 +10,6 @@ import { filter } from 'rxjs/operators/filter';
 @Component({
   selector: 'im-developer-cabinet',
   templateUrl: './developer-cabinet.component.html',
-  styleUrls: ['./developer-cabinet.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DeveloperCabinetComponent {
