@@ -1,27 +1,28 @@
 {
-	"basePath": "/api/v1",
-	"consumes": [
-		"application/json"
-	],
-	"definitions": {
-		"LanguageType": {
-			"enum": [
+  "basePath": "/api/v1",
+  "consumes": [
+    "application/json"
+  ],
+  "definitions": {
+    "LanguageType": {
+      "enum": [
         "Java",
-				"JavaScript",
-				"CSharp"
-			],
-			"type": "string"
-		},
-		"DeveloperPosition": {
-			"enum": [
-				"Trainee",
-				"Junior",
-				"Middle",
-				"Senior",
-				"Expert"
-			],
-			"type": "string"
-		},
+        "JavaScript",
+        "CSharp",
+        "Python"
+      ],
+      "type": "string"
+    },
+    "DeveloperPosition": {
+      "enum": [
+        "Trainee",
+        "Junior",
+        "Middle",
+        "Senior",
+        "Expert"
+      ],
+      "type": "string"
+    },
     "LanguageStatistic": {
       "properties": {
         "name": {
@@ -75,53 +76,53 @@
       ],
       "type": "object"
     }
-	},
-	"info": {
-		"title": "developer-wars",
-		"version": "0.0.1",
-		"license": {
-			"name": "MIT"
-		}
-	},
-	"paths": {
-		"/Languages": {
-			"get": {
-				"operationId": "getLanguages",
-				"produces": [
-					"application/json"
-				],
-				"responses": {
-					"200": {
-						"description": "Ok",
-						"schema": {
+  },
+  "info": {
+    "title": "developer-wars",
+    "version": "0.0.1",
+    "license": {
+      "name": "MIT"
+    }
+  },
+  "paths": {
+    "/Languages": {
+      "get": {
+        "operationId": "getLanguages",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
               "type": "array",
               "items": {
                 "$ref": "#/definitions/Language"
               }
             }
-					}
-				},
-				"summary": "Get languages list",
-				"security": [],
-				"parameters": []
-			}
-		},
+          }
+        },
+        "summary": "Get languages list",
+        "security": [],
+        "parameters": []
+      }
+    },
     "/Auth": {
-			"post": {
-				"operationId": "login",
-				"produces": [
-					"application/json"
-				],
-				"responses": {
-					"200": {
-						"description": "Ok",
-						"schema": {
+      "post": {
+        "operationId": "login",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Ok",
+            "schema": {
               "$ref": "#/definitions/User"
             }
-					}
-				},
-				"summary": "User authentication",
-				"security": [],
+          }
+        },
+        "summary": "User authentication",
+        "security": [],
         "parameters": [
           {
             "in": "body",
@@ -132,13 +133,13 @@
             }
           }
         ]
-			}
-		}
-	},
-	"produces": [
-		"application/json"
-	],
-	"swagger": "2.0",
-	"securityDefinitions": {},
-	"host": "localhost:8088"
+      }
+    }
+  },
+  "produces": [
+    "application/json"
+  ],
+  "swagger": "2.0",
+  "securityDefinitions": {},
+  "host": "localhost:8088"
 }

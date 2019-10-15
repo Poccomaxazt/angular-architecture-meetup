@@ -6,6 +6,7 @@ import { DeveloperPosition } from '../../api/models/developer-position';
 import { Developer } from '../developer-types/developer';
 import { DevelopersService } from './developers.service';
 import { JavaDeveloper } from '../developer-types/java-develop';
+import { PythonDeveloper } from '../developer-types/python-developer';
 
 @Injectable()
 export class DevelopersFactoryService {
@@ -18,6 +19,8 @@ export class DevelopersFactoryService {
         return new JavaScriptDeveloper(devService, position);
       case LanguageType.CSHARP:
         return new CSharpDeveloper(devService, position);
+      case LanguageType.PYTHON:
+        return new PythonDeveloper(devService, position);
       default:
         console.warn(`Unknown developer type: ${technology}!`);
     }
