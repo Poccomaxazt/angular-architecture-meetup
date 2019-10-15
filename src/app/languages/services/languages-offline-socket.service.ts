@@ -17,6 +17,10 @@ export class LanguagesOfflineSocketService extends LanguagesSocketService {
     {
       name: LanguageType.CSHARP,
       commits: 5
+    },
+    {
+      name: LanguageType.PYTHON,
+      commits: 1
     }
   ]);
 
@@ -32,7 +36,9 @@ export class LanguagesOfflineSocketService extends LanguagesSocketService {
         ? Math.round(Math.random())
           ? LanguageType.CSHARP
           : LanguageType.JAVA
-        : LanguageType.JAVA_SCRIPT;
+        : Math.round(Math.random())
+          ? LanguageType.JAVA_SCRIPT
+          : LanguageType.PYTHON;
       this.emit(lang);
     }, 2000);
   }

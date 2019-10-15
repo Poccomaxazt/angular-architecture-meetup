@@ -20,6 +20,10 @@ export class ApiOfflineService extends ApiService {
         {
           id: 'csharp',
           name: LanguageType.CSHARP
+        },
+        {
+          id: 'python',
+          name: LanguageType.PYTHON
         }
       ]);
       observer.complete();
