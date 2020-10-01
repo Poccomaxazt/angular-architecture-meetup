@@ -1,6 +1,6 @@
 # ImApp
 
-This a test project for Infopulse meetup and a presentation of theme "Angular Architecture patterns" 
+This is a test project for the Infopulse meetup and a presentation of a theme **"Angular Architecture patterns"** 
 
 ## YouTube
 
